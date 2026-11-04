@@ -1,0 +1,22 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+
+# Large geospatial artifacts
+data/raw/
+data/processed/*.tif
+data/processed/*.json
+data/processed/topography/
+!data/processed/.gitkeep
+
+.env*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

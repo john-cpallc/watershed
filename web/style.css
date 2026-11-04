@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: #0f172a;
+}
+
+#map {
+  position: absolute;
+  inset: 0;
+}
+
+.panel {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 2;
+  width: min(360px, calc(100vw - 32px));
+  padding: 16px 18px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.panel h1 {
+  margin: 0 0 4px;
+  font-size: 1.25rem;
+}
+
+.subtitle {
+  margin: 0 0 12px;
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.4;
+}
+
+.status,
+.cursor,
+.result,
+.legend {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.legend {
+  margin-bottom: 8px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #475569;
+}
+
+.cursor {
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.result {
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  margin-bottom: 10px;
+}
+
+.result strong {
+  color: #0369a1;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #0f766e;
+  color: white;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #0d9488;
+}
+
+.maplibregl-popup-content {
+  font-size: 0.85rem;
+}
